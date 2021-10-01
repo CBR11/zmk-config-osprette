@@ -106,10 +106,10 @@
 
         SYM_LMOD_layer {
             bindings = <
-                          &kp LC(W)       &kp LC(Q)   &kp LC(T) &none        &kp LBRC  &kp DEL   &kp RBRC &kp HASH
-          &none &sk LSHFT &sk LALT        &sk LCTRL   &sk LGUI  &kp PSCRN    &kp LPAR  &kp BSPC  &kp RPAR &kp LT    &kp PIPE &kp TILDE
-                &none     &kp LS(LC(TAB)) &kp LC(TAB) &none     &kp CAPS     &kp LBKT  &kp ENTER &kp RBKT &kp GT    &kp AT
-                                                      &none     &none        &trans    &sl FN
+                              &kp LC(W)       &kp LC(Q)   &kp LC(T) &none        &kp LBRC  &kp DEL   &kp RBRC &kp HASH
+   &kp LA(LEFT) &sk LSHFT     &sk LALT        &sk LCTRL   &sk LGUI  &kp PSCRN    &kp LPAR  &kp BSPC  &kp RPAR &kp LT    &kp PIPE &kp TILDE
+                &kp LA(RIGHT) &kp LS(LC(TAB)) &kp LC(TAB) &none     &kp CAPS     &kp LBKT  &kp ENTER &kp RBKT &kp GT    &kp AT
+                                                          &none     &none        &trans    &sl FN
             >;
         };
 
@@ -127,7 +127,7 @@
                          &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_MUTE    &none        &kp LG(D)     &kp LS(LG(D)) &kp LG(Q)
      &kp C_PREV &kp LEFT &kp DOWN     &kp UP       &kp RIGHT  &kp C_PP      &sk LA(LGUI) &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP) &kp LG(RIGHT) &none
                 &kp HOME &kp PG_DN    &kp PG_UP    &kp END    &kp C_STOP    &none        &kp LG(ENTER) &kp LG(O)     &kp LG(N)  &none
-                                                     &none      &none         &trans       &none
+                                                   &none      &none         &trans       &none
             >;
         };
 
