@@ -81,7 +81,7 @@
         combo_excl {
             timeout-ms = <60>;
             key-positions = <4 6>;
-            bindings = <&kp GRAVE>;
+            bindings = <&kp EXCL>;
             layers = <0>;
         };
     };
