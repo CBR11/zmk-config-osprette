@@ -15,14 +15,6 @@
 
 / {
     behaviors {
-        comma_exclam: comma_exclam {
-            compatible = "zmk,behavior-mod-morph";
-            label = " COMMA_EXCLAM";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp EXCL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         dot_qmark: dot_qmark {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_QUESTION";
@@ -85,6 +77,13 @@
             bindings = <&kp GRAVE>;
             layers = <0>;
         };
+
+        combo_excl {
+            timeout-ms = <60>;
+            key-positions = <4 6>;
+            bindings = <&kp GRAVE>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -92,7 +91,7 @@
 
         MAIN_layer {
             bindings = <
-                      &kp V &kp W &kp D        &kp J          &kp Z     &kp F        &kp U    &kp COMM
+                      &kp V &kp W &kp D        &kp J          &kp Z     &kp F        &kp U    &kp COMMA
           &kp Q &kp I &kp S &kp R &kp T        &kp G          &kp P     &kp N        &kp E    &kp A      &kp O &kp FSLH
                 &kp Y &kp C &kp L &kp M        &kp K          &kp B     &kp H        &kp APOS &dot_qmark &kp X
                                   &sl SYM_LMOD &lt NAV SPC    &skq RSHFT &sl NUM_RMOD
