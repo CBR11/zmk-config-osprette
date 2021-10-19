@@ -31,11 +31,11 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        fslash_bslash: fslash_bslash {
+        fslash_caret: fslash_caret {
             compatible = "zmk,behavior-mod-morph";
-            label = "FORWARDSLASH_BACKSLASH";
+            label = "FORWARDSLASH_CARET";
             #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp BSLH>;
+            bindings = <&kp FSLH>, <&kp CARET>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -101,8 +101,8 @@
         MAIN_layer {
             bindings = <
                       &kp P &kp L &kp C        &kp F          &kp K      &kp U         &kp O      &kp Y
-          &kp V &kp R &kp N &kp T &kp S        &kp D          &kp APOS   &kp A         &kp E      &kp I    &kp H          &kp Q
-                &kp Z &kp B &kp M &kp G        &kp W          &kp MINUS  &comma_exclam &dot_qmark &kp SEMI &fslash_bslash
+          &kp V &kp R &kp N &kp T &kp S        &kp D          &kp APOS   &kp A         &kp E      &kp I    &kp H         &kp Q
+                &kp Z &kp B &kp M &kp G        &kp W          &kp MINUS  &comma_exclam &dot_qmark &kp SEMI &fslash_caret
                                   &sl SYM_LMOD &lt NAV SPC    &skq RSHFT &sl NUM_RMOD
             >;
         };
@@ -110,7 +110,7 @@
         SYM_LMOD_layer {
             bindings = <
                               &kp LC(W)       &kp LC(Q)   &kp LC(T) &none        &kp LBRC  &kp DEL   &kp RBRC &kp HASH
-   &kp LA(LEFT) &sk LSHFT     &sk LALT        &sk LCTRL   &sk LGUI  &kp PSCRN    &kp LPAR  &kp BSPC  &kp RPAR &kp LT   &kp AT    &kp PIPE
+   &kp LA(LEFT) &sk LSHFT     &sk LALT        &sk LCTRL   &sk LGUI  &kp PSCRN    &kp LPAR  &kp BSPC  &kp RPAR &kp LT   &kp AT    &kp BSLH
                 &kp LA(RIGHT) &kp LS(LC(TAB)) &kp LC(TAB) &kp LC(N) &kp CAPS     &kp LBKT  &kp ENTER &kp RBKT &kp GT   &kp TILDE
                                                           &none     &none        &trans    &sl FN
             >;
@@ -118,10 +118,10 @@
 
         NUM_RMOD_layer {
             bindings = <
-                         &kp N7 &kp N8 &kp N9  &kp STAR     &none  &sk LS(RGUI) &kp LC(D) &kp LC(C)
-      &kp CARET &kp AMPS &kp N1 &kp N2 &kp N3  &kp EQUAL    &none  &sk RGUI     &sk RCTRL &sk RALT  &sk RSHFT &kp LC(V)
-                &kp DLLR &kp N4 &kp N5 &kp N6  &kp PLUS     &none  &none        &none     &none     &none
-                                       &kp DOT &kp N0       &trans &none
+                        &kp N7 &kp N8 &kp N9  &kp STAR     &none  &sk LS(RGUI) &kp LC(D) &kp LC(C)
+      &kp PIPE &kp AMPS &kp N1 &kp N2 &kp N3  &kp EQUAL    &none  &sk RGUI     &sk RCTRL &sk RALT  &sk RSHFT &kp LC(V)
+               &kp DLLR &kp N4 &kp N5 &kp N6  &kp PLUS     &none  &none        &none     &none     &none
+                                      &kp DOT &kp N0       &trans &none
             >;
         };
 
