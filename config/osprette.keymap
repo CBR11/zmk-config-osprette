@@ -104,8 +104,8 @@
             bindings = <
                       &kp F &kp M &kp P        &kp V            &kp SEMI    &dot_and &fslash_star &dqt_qmark
           &kp Z &kp R &kp S &kp N &kp T        &kp B            &comma_pipe &kp A    &kp E        &kp C      &kp I &sqt_exclam
-                &kp X &kp G &kp L &kp D        &kp K            &kp MINUS   &kp U    &kp O        &kp W      &kp Y
-                                  &sl SYM_LMOD &lt NAV SPC      &lt FN H    &sl NUM_RMOD
+                &kp X &kp G &kp H &kp D        &kp K            &kp MINUS   &kp U    &kp O        &kp W      &kp Y
+                                  &sl SYM_LMOD &lt NAV SPC      &lt FN L    &sl NUM_RMOD
             >;
         };
 
