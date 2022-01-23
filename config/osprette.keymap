@@ -62,21 +62,21 @@
 
         combo_j {
             timeout-ms = <30>;
-            key-positions = <0 8>;
+            key-positions = <0 10>;
             bindings = <&kp COMMA>;
             layers = <0>;
         };
 
         combo_q {
             timeout-ms = <30>;
-            key-positions = <1 9>;
-            bindings = <&kp DQT>;
+            key-positions = <1 11>;
+            bindings = <&kp LS(N2)>;
             layers = <0>;
         };
 
         combo_esc {
             timeout-ms = <30>;
-            key-positions = <2 10>;
+            key-positions = <2 12>;
             bindings = <&kp DOT>;
             layers = <0>;
         };
