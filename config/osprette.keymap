@@ -62,22 +62,22 @@
 
         combo_j {
             timeout-ms = <30>;
-            key-positions = <0 1>;
-            bindings = <&kp J>;
+            key-positions = <0 8>;
+            bindings = <&kp COMMA>;
             layers = <0>;
         };
 
         combo_q {
             timeout-ms = <30>;
-            key-positions = <1 2>;
-            bindings = <&kp Q>;
+            key-positions = <1 9>;
+            bindings = <&kp DQT>;
             layers = <0>;
         };
 
         combo_esc {
             timeout-ms = <30>;
-            key-positions = <21 22>;
-            bindings = <&kp ESC>;
+            key-positions = <2 10>;
+            bindings = <&kp DOT>;
             layers = <0>;
         };
 
@@ -94,9 +94,9 @@
 
         MAIN_layer {
             bindings = <
-                      &kp A &kp M &kp P        &kp V            &kp SEMI    &dot_and &fslash_star &dqt_qmark
-          &kp Z &kp R &kp S &kp N &kp T        &kp B            &comma_pipe &kp A    &kp E        &kp C      &kp I &kp SQT
-                &kp X &kp G &kp H &kp D        &kp K            &kp MINUS   &kp U    &kp O        &kp W      &kp Y
+                      &kp U &kp O &kp B        &kp EQUAL        &kp P    &kp K &kp L &kp M
+          &kp Y &kp I &kp A &kp E &kp S        &kp W            &kp F    &kp D    &kp N        &kp T      &kp G &kp C
+                &kp LBKT &kp SQT &kp SEMI &kp SLASH  &kp X      &kp Q   &kp H    &kp Z        &kp J      &kp V
                                   &sl SYM_LMOD &lt NAV SPC      &lt FN L    &sl NUM_RMOD
             >;
         };
