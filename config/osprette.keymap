@@ -63,7 +63,7 @@
         combo_j {
             timeout-ms = <30>;
             key-positions = <0 10>;
-            bindings = <&kp COMMA>;
+            bindings = <&kp DOT>;
             layers = <0>;
         };
 
@@ -77,16 +77,24 @@
         combo_esc {
             timeout-ms = <30>;
             key-positions = <2 12>;
-            bindings = <&kp DOT>;
+            bindings = <&kp COMMA>;
             layers = <0>;
         };
 
         combo_tab {
             timeout-ms = <30>;
-            key-positions = <22 23>;
+            key-positions = <6 16>;
             bindings = <&kp TAB>;
             layers = <0>;
         };
+    
+           combo_enter {
+            timeout-ms = <30>;
+            key-positions = <7 17>;
+            bindings = <&kp ENTER>;
+            layers = <0>; 
+         };
+    
     };
 
     keymap {
@@ -97,7 +105,7 @@
                       &kp U &kp O &kp B        &kp EQUAL        &kp P    &kp K &kp L &kp M
           &kp Y &kp I &kp A &kp E &kp S        &kp W            &kp F    &kp D    &kp N        &kp T      &kp G &kp C
                 &kp LBKT &kp SQT &kp SEMI &kp SLASH  &kp X      &kp Q   &kp H    &kp Z        &kp J      &kp V
-                                  &sl SYM_LMOD &lt NAV SPC      &lt FN L    &sl NUM_RMOD
+                                  &sl SYM_LMOD &lt NAV SPC      &lt FN R    &sl NUM_RMOD
             >;
         };
 
