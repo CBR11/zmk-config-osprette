@@ -3,10 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define MAIN 0
-#define SYM_LMOD 1
-#define NUM_RMOD 2
+#define SYM 1
+#define NUM 2
 #define NAV 3
 #define FN 4
+#define NAVA 5
 
 &mt {
     flavor = "tap-preferred";
@@ -14,49 +15,6 @@
 };
 
 / {
-    behaviors {
-        comma_pipe: comma_pipe {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_PIPE";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp PIPE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        dot_and: dot_and {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_AND";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp AMPS>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        fslash_star: fslash_star {
-            compatible = "zmk,behavior-mod-morph";
-            label = "FORWARDSLASH_STAR";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp STAR>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        dqt_qmark: dqt_qmark {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOUBLEQUOTE_QUESTION";
-            #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp QMARK>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        skq: sticky_key_quick_release {
-            compatible = "zmk,behavior-sticky-key";
-            label = "STICKY_KEY_QUICK_RELEASE";
-            #binding-cells = <1>;
-            bindings = <&kp>;
-            release-after-ms = <1000>;
-            quick-release;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -64,35 +22,35 @@
             timeout-ms = <30>;
             key-positions = <0 10>;
             bindings = <&kp DOT>;
-            layers = <0>;
+            layers = <3>;
         };
 
         combo_q {
             timeout-ms = <30>;
             key-positions = <1 11>;
             bindings = <&kp LS(N2)>;
-            layers = <0>;
+            layers = <3>;
         };
 
         combo_esc {
             timeout-ms = <30>;
             key-positions = <2 12>;
             bindings = <&kp COMMA>;
-            layers = <0>;
+            layers = <3>;
         };
 
         combo_tab {
             timeout-ms = <30>;
             key-positions = <6 16>;
             bindings = <&kp TAB>;
-            layers = <0>;
+            layers = <3>;
         };
     
            combo_enter {
             timeout-ms = <30>;
             key-positions = <7 17>;
             bindings = <&kp ENTER>;
-            layers = <0>; 
+            layers = <3>; 
          };
     
     };
@@ -105,11 +63,11 @@
                       &kp U &kp O &kp B        &kp EQUAL        &kp P    &kp K &kp L &kp M
           &kp Y &kp I &kp A &kp E &kp S        &kp W            &kp F    &kp D    &kp N        &kp T      &kp G &kp C
                 &kp LBKT &kp SQT &kp SEMI &kp SLASH  &kp X      &kp Q   &kp H    &kp Z        &kp J      &kp V
-                                  &sl SYM_LMOD &lt NAV SPC      &lt FN R    &sl NUM_RMOD
+                                  &kp SPC &mo NUM      &lt FN R    &lt NAVA R
             >;
         };
 
-        SYM_LMOD_layer {
+        SYM_layer {
             bindings = <
                               &kp LS(LC(TAB)) &kp LC(TAB) &caps_word &none          &kp TILDE &kp LBRC  &kp RBRC &kp HASH
    &kp LA(LEFT) &kp LA(RIGHT) &sk LALT        &sk LCTRL   &skq LSHFT &kp PSCRN      &kp LT    &kp LPAR  &kp RPAR &kp GT   &kp BSLH  &kp EXCL
@@ -118,7 +76,7 @@
             >;
         };
 
-        NUM_RMOD_layer {
+        NUM_layer {
             bindings = <
                          &kp N7 &kp N8 &kp N9  &kp DLLR       &none &caps_word &kp CAPS     &none
          &none &kp CARET &kp N1 &kp N2 &kp N3  &kp EQUAL      &none &skq RSHFT &sk RCTRL    &sk RALT  &none &none
@@ -129,7 +87,7 @@
 
         NAV_layer {
             bindings = <
-                         &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_MUTE      &sk RALT    &kp LG(D)     &kp LS(LG(D)) &kp LG(Q)
+                         &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_MUTE      &sk RALT    &kp TAB     &kp ENTER &kp LG(Q)
      &kp C_PREV &kp LEFT &kp DOWN     &kp UP       &kp RIGHT  &kp C_PP        &sk RA(GUI) &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP) &kp LG(RIGHT) &none
                 &kp HOME &kp PG_DN    &kp PG_UP    &kp END    &kp C_STOP      &sk RCTRL   &kp LG(ENTER) &kp LG(O)     &kp LG(N)  &sk RA(RCTRL)
                                                    &none      &none           &kp DEL     &sk RSHFT
@@ -144,5 +102,15 @@
                                     &none  &none        &none &none
             >;
         };
+        
+        NAVA_layer {
+            bindings = <
+                         &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_MUTE      &sk RALT    &kp TAB     &kp ENTER &kp LG(Q)
+     &kp C_PREV &kp LS(SLASH) &kp COMMA     &kp DOT  &kp LS(N2)  &kp C_PP        &sk RA(GUI) &kp kp LEFT  &kp UP  &kp DOWN &kp RIGHT &none
+                &kp HOME &kp PG_DN    &kp PG_UP    &kp END    &kp C_STOP      &kp BSPC   &kp RC(BSPC) &kp LG(O)     &kp LG(N)  &sk RA(RCTRL)
+                                                   &kp LS      &none           &none     &none
+            >;
+        };        
+        
     };
 };
