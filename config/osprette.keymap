@@ -70,7 +70,7 @@
         SYM_layer {
             bindings = <
                               &kp LS(LC(TAB)) &kp LC(TAB) &caps_word &none          &kp TILDE &kp LBRC  &kp RBRC &kp HASH
-   &kp LA(LEFT) &kp LA(RIGHT) &sk LALT        &sk LCTRL   &skq LSHFT &kp PSCRN      &kp LT    &kp LPAR  &kp RPAR &kp GT   &kp BSLH  &kp EXCL
+   &kp LA(LEFT) &kp LA(RIGHT) &sk LALT        &sk LCTRL   &sk LSHFT &kp PSCRN      &kp LT    &kp LPAR  &kp RPAR &kp GT   &kp BSLH  &kp EXCL
                 &none         &kp LC(W)       &kp LC(Q)   &sk LGUI   &none          &kp GRAVE &kp LBKT  &kp RBKT &kp AT   &kp PRCNT
                                                           &none      &none          &kp BSPC  &kp ENTER
             >;
@@ -79,7 +79,7 @@
         NUM_layer {
             bindings = <
                          &kp N7 &kp N8 &kp N9  &kp DLLR       &none &caps_word &kp CAPS     &none
-         &none &kp CARET &kp N1 &kp N2 &kp N3  &kp EQUAL      &none &skq RSHFT &sk RCTRL    &sk RALT  &none &none
+         &none &kp CARET &kp N1 &kp N2 &kp N3  &kp EQUAL      &none &sk RSHFT &sk RCTRL    &sk RALT  &none &none
                &none     &kp N4 &kp N5 &kp N6  &kp PLUS       &none &sk RGUI   &sk LS(RGUI) &kp LC(C) &none
                                        &kp DOT &kp N0         &none &none
             >;
