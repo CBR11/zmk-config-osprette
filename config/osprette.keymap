@@ -15,13 +15,23 @@
 };
 
 / {
+    behaviors {
+        qe: comma_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_PIPE";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp N1>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
         combo_j {
             timeout-ms = <30>;
             key-positions = <0 10>;
-            bindings = <&kp DOT>;
+            bindings = <&qe>;
             layers = <0>;
         };
 
