@@ -88,7 +88,7 @@
         MAIN_layer {
             bindings = <
                       &kp U &kp O &kp B        &kp EQUAL        &kp P    &kp K &kp L &kp M
-          &kp Y &kp I &kp A &kp E &hm LSHIFT  S       &kp W            &kp F    &hm LSHIFT  D    &kp N        &kp T      &kp G &kp C
+          &kp Y &hm LGUI I &kp A &kp E &hm LSHIFT  S       &kp W            &kp F    &hm LSHIFT  D    &kp N        &kp T      &kp G &kp C
                 &kp LBKT &kp SQT &kp SEMI &kp SLASH  &kp X      &kp Q   &kp H    &kp Z        &kp J      &kp V
                                   &kp SPC &mo NUM      &lt FN R    &lt NAVA R
             >;
