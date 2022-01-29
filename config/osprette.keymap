@@ -20,7 +20,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_PIPE";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp N1>;
+            bindings = <&kp LS(MINUS)>, <&kp N1>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
