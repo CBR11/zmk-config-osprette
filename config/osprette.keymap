@@ -23,6 +23,15 @@
             bindings = <&kp LS(MINUS)>, <&kp N1>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        
+         hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "homerow mods";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     combos {
@@ -79,7 +88,7 @@
         MAIN_layer {
             bindings = <
                       &kp U &kp O &kp B        &kp EQUAL        &kp P    &kp K &kp L &kp M
-          &kp Y &kp I &kp A &kp E &kp S        &kp W            &kp F    &kp D    &kp N        &kp T      &kp G &kp C
+          &kp Y &kp I &kp A &kp E &hm LSHIFT  S       &kp W            &kp F    &hm LSHIFT  D    &kp N        &kp T      &kp G &kp C
                 &kp LBKT &kp SQT &kp SEMI &kp SLASH  &kp X      &kp Q   &kp H    &kp Z        &kp J      &kp V
                                   &kp SPC &mo NUM      &lt FN R    &lt NAVA R
             >;
