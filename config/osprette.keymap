@@ -53,7 +53,7 @@
 
         combo_esc {
             timeout-ms = <30>;
-            key-positions = <2 12>;
+            key-positions = <3 13>;
             bindings = <&kp EQUAL>;
             layers = <0>;
         };
@@ -80,11 +80,50 @@
          };        
             combo_minus{
             timeout-ms = <30>;
-            key-positions = <12 23>;
+            key-positions = <2 12>;
             bindings = <&kp SLASH>;
             layers = <0>; 
          };        
+          combo_la {
+            timeout-ms = <30>;
+            key-positions = <10 21>;
+            bindings = <&kp LALT>;
+            layers = <0>;
+        };
+
+        combo_ls {
+            timeout-ms = <30>;
+            key-positions = <11 22>;
+            bindings = <&kp LSHIFT>;
+            layers = <0>;
+        };
+
+        combo_lc {
+            timeout-ms = <30>;
+            key-positions = <12 23>;
+            bindings = <&kp LCTRL>;
+            layers = <0>;
+        };
     
+           combo_rc {
+            timeout-ms = <30>;
+            key-positions = <15 26>;
+            bindings = <&kp RCTRL>;
+            layers = <0>; 
+            
+         };
+            combo_rs{
+            timeout-ms = <30>;
+            key-positions = <16 27>;
+            bindings = <&kp RSHIFT)>;
+            layers = <0>; 
+         };        
+            combo_ra{
+            timeout-ms = <30>;
+            key-positions = <17 28>;
+            bindings = <&kp LALT>;
+            layers = <0>; 
+         };          
     };
 
     keymap {
@@ -93,7 +132,7 @@
         MAIN_layer {
             bindings = <
                       &kp U &kp O &kp B        &kp COMMA        &kp P    &kp K &kp L &kp M
-          &kp Y &kp I &kp A &hm LSHIFT E &hm LCTRL  S  &kp DOT            &kp F    &hm RCTRL  D    &hm RSHIFT N        &kp T      &kp G &kp C
+          &kp Y &kp I &kp A &kp E &kp  S  &kp DOT            &kp F    &kp  D    &kp N        &kp T      &kp G &kp C
                 &kp LBKT &kp SQT &kp SEMI &kp Q  &kp X      &kp Z   &kp H    &kp W        &kp J      &kp V
                                   &kp SPC &mo NUM      &lt FN R    &lt NAVA R
             >;
@@ -113,7 +152,7 @@
                          &kp N7 &kp N8 &kp N9  &kp N0       &none &caps_word &kp CAPS     &none
          &none &kp CARET &kp N1 &kp N2 &kp N3  &kp EQUAL      &none &sk RSHFT &sk RCTRL    &sk RALT  &none &none
                &none     &kp N4 &kp N5 &kp N6  &kp PLUS       &none &sk RGUI   &sk LS(RGUI) &kp LC(C) &none
-                                       &kp DOT &none         &none &none
+                                       &none &none         &none &none
             >;
         };
 
