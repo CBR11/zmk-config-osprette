@@ -112,13 +112,13 @@
             layers = <0>; 
             
          };
-            combo_rs {
+           combo_rs {
             timeout-ms = <30>;
             key-positions = <16 27>;
             bindings = <&kp RSHIFT)>;
             layers = <0>; 
          };        
-            combo_ra {
+           combo_ra {
             timeout-ms = <30>;
             key-positions = <17 28>;
             bindings = <&kp LALT>;
