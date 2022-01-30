@@ -135,7 +135,7 @@
                       &kp U &kp O &kp B        &kp COMMA        &kp P    &kp K &kp L &kp M
           &kp Y &kp I &kp A &kp E &kp  S  &kp DOT            &kp F    &kp  D    &kp N        &kp T      &kp G &kp C
                 &kp LBKT &kp SQT &kp SEMI &kp Q  &kp X      &lt SYM Z   &kp H    &kp W        &kp J      &kp V
-                                  &lt LSHIFT SPC &mo NUM      &lt FN R    &lt NAVA R
+                                  &hm LSHIFT SPC &mo NUM      &lt FN R    &lt NAVA R
             >;
         };
 
