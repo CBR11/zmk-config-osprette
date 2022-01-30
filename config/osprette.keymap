@@ -110,7 +110,13 @@
             key-positions = <15 26>;
             bindings = <&kp RCTRL>;
             layers = <0>; 
-            
+        };
+
+        combo_rs {
+            timeout-ms = <30>;
+            key-positions = <16 27>;
+            bindings = <&kp LSHIFT>;
+            layers = <0>;            
  
          };        
            combo_ra {
