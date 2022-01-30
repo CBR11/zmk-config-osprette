@@ -111,12 +111,7 @@
             bindings = <&kp RCTRL>;
             layers = <0>; 
             
-         };
-           combo_rs {
-            timeout-ms = <30>;
-            key-positions = <16 27>;
-            bindings = <&kp L)>;
-            layers = <0>; 
+ 
          };        
            combo_ra {
             timeout-ms = <30>;
