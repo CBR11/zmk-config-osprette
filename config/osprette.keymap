@@ -124,7 +124,28 @@
             key-positions = <17 28>;
             bindings = <&kp LALT>;
             layers = <0>; 
-         };          
+         }; 
+         
+           combo_tabv {
+            timeout-ms = <30>;
+            key-positions = <15 16>;
+            bindings = <&kp TAB>;
+            layers = <0>;
+        };
+    
+           combo_enterv {
+            timeout-ms = <30>;
+            key-positions = <16 17>;
+            bindings = <&kp ENTER>;
+            layers = <0>; 
+            
+         };
+           combo_bspcv {
+            timeout-ms = <30>;
+            key-positions = <15 16 17>;
+            bindings = <&kp RC(BSPC)>;
+            layers = <0>; 
+         };        
     };
 
     keymap {
