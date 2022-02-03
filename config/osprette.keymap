@@ -8,6 +8,7 @@
 #define NAV 3
 #define FN 4
 #define NAVA 5
+#define MED 6
 
 &lt {
     flavor = "balanced";
@@ -153,7 +154,7 @@
 
         MAIN_layer {
             bindings = <
-                      &kp U &kp O &kp B        &kp COMMA        &kp P    &kp K &kp L &kp M
+                      &kp U &kp O &kp B        &lt MED COMMA        &kp P    &kp K &kp L &kp M
           &kp LBKT &kp I &kp A &kp E &kp  S  &kp DOT            &kp F    &kp  D    &kp N        &kp T      &kp G &kp V
                 &kp Y &kp SQT &kp SEMI &kp Q  &kp X      &lt SYM Z   &kp H    &kp W        &kp J      &kp C
                                   &hm LSHIFT SPC &mo NUM      &lt FN R    &lt NAVA R
@@ -203,6 +204,15 @@
                 &kp HOME &kp PG_DN    &kp PG_UP    &kp END    &kp C_STOP      &kp BSPC   &kp RC(BSPC) &kp LG(O)     &kp LG(N)  &sk RA(RCTRL)
                                                    &kp LSHFT      &none           &none     &none
             >;
-        };        
+        }; 
+        
+        MED_layer {
+            bindings = <
+                         &kp C_PREV &kp C_VOL_UP &kp C_PP &none      &sk RALT    &kp TAB     &kp ENTER &kp LG(Q)
+     &kp C_PREV &kp LEFT &kp C_NEXT &kp C_VOL_DN &kp C_STOP  &kp C_PP        &sk RA(GUI) &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP) &kp LG(RIGHT) &none
+                &kp HOME &kp PG_DN    &kp PG_UP    &kp END    &kp C_STOP      &sk RCTRL   &kp LG(ENTER) &kp LG(O)     &kp LG(N)  &sk RA(RCTRL)
+                                                   &none      &none           &kp DEL     &sk RSHFT
+            >;
+        };
     };
 };
