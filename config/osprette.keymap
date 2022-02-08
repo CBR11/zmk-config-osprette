@@ -45,7 +45,7 @@
             layers = <3>;
         };
 
-        combo_q {
+        combo_cit {
             timeout-ms = <30>;
             key-positions = <5 15>;
             bindings = <&kp LS(N2)>;
@@ -140,7 +140,7 @@
            combo_q {
             timeout-ms = <30>;
             key-positions = <4 14>;
-            bindings = <&kp Z>;
+            bindings = <&kp Q>;
             layers = <0>; 
             
          };
