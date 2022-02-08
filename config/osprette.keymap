@@ -146,7 +146,7 @@
          };
            combo_bspcv {
             timeout-ms = <30>;
-            key-positions = <15 16 17>;
+            key-positions = <26 27>;
             bindings = <&kp RC(BSPC)>;
             layers = <0>; 
          };        
