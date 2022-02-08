@@ -40,14 +40,14 @@
 
         combo_j {
             timeout-ms = <30>;
-            key-positions = <0 10>;
+            key-positions = <5 15>;
             bindings = <&qe>;
             layers = <0>;
         };
 
         combo_q {
             timeout-ms = <30>;
-            key-positions = <1 11>;
+            key-positions = <5 15>;
             bindings = <&kp LS(N2)>;
             layers = <0>;
         };
@@ -61,24 +61,19 @@
 
         combo_tab {
             timeout-ms = <30>;
-            key-positions = <5 15>;
+            key-positions = <6 16>;
             bindings = <&kp TAB>;
             layers = <0>;
         };
     
            combo_enter {
             timeout-ms = <30>;
-            key-positions = <6 16>;
+            key-positions = <7 17>;
             bindings = <&kp ENTER>;
             layers = <0>; 
             
          };
-            combo_bspc{
-            timeout-ms = <30>;
-            key-positions = <7 17>;
-            bindings = <&kp RC(BSPC)>;
-            layers = <0>; 
-         };        
+ 
             combo_minus{
             timeout-ms = <30>;
             key-positions = <2 12>;
@@ -127,17 +122,17 @@
             layers = <0>; 
          }; 
          
-           combo_tabv {
+           combo_x {
             timeout-ms = <30>;
-            key-positions = <15 16>;
-            bindings = <&kp TAB>;
+            key-positions = <2 3>;
+            bindings = <&kp X>;
             layers = <0>;
         };
     
-           combo_enterv {
+           combo_z {
             timeout-ms = <30>;
-            key-positions = <16 17>;
-            bindings = <&kp ENTER>;
+            key-positions = <4 5>;
+            bindings = <&kp Z>;
             layers = <0>; 
             
          };
@@ -155,9 +150,9 @@
         MAIN_layer {
             bindings = <
                       &kp U &kp O &kp C        &lt MED COMMA        &kp P    &kp K &kp L &kp M
-          &kp Y &kp I &kp A &kp E &kp  S  &kp DOT            &kp F    &kp  D    &kp N        &kp T      &kp G &kp V
+          &kp Y &kp I &kp A &kp E &hm LSHIFT  S  &kp DOT            &kp F    &hm LSHIFT  D    &kp N        &kp T      &kp G &kp V
                 &kp LBKT &kp SQT &kp SEMI &kp B  &kp X      &lt SYM Z   &kp H    &kp W        &kp J      &kp Q
-                                  &hm LSHIFT SPC &mo NUM      &lt FN R    &lt NAVA R
+                                  &kp SPC &mo NUM      &lt FN R    &lt NAVA R
             >;
         };
 
