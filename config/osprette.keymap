@@ -11,7 +11,7 @@
 #define MED 6
 
 &lt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     tapping_term_ms = <250>;
 };
 
@@ -42,7 +42,7 @@
             timeout-ms = <30>;
             key-positions = <5 15>;
             bindings = <&qe>;
-            layers = <0>;
+            layers = <3>;
         };
 
         combo_q {
@@ -132,6 +132,14 @@
            combo_z {
             timeout-ms = <30>;
             key-positions = <4 5>;
+            bindings = <&kp Z>;
+            layers = <0>; 
+            
+         };
+         
+           combo_q {
+            timeout-ms = <30>;
+            key-positions = <4 14>;
             bindings = <&kp Z>;
             layers = <0>; 
             
