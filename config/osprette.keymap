@@ -158,7 +158,7 @@
         MAIN_layer {
             bindings = <
                       &kp U &kp O &kp C        &lt MED COMMA        &kp P    &kp K &kp L &kp M
-          &kp Y &kp I &kp A &kp E &hm LSHIFT  S  &kp DOT            &kp F    &hm LSHIFT  D    &kp N        &kp T      &kp G &kp V
+          &kp Y &kp I &kp A &hm LCTRL E &hm LSHIFT  S  &kp DOT            &kp F    &hm LSHIFT  D    &hm LCTRL N        &kp T      &kp G &kp V
                 &kp LBKT &kp SQT &kp SEMI &kp B  &qe      &lt SYM Z   &kp H    &kp W        &kp J      &kp Q
                                   &kp SPC &mo NUM      &lt FN R    &lt NAVA R
             >;
