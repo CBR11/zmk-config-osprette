@@ -98,14 +98,14 @@
             timeout-ms = <30>;
             key-positions = <12 23>;
             bindings = <&kp LCTRL>;
-            layers = <0>;
+            layers = <3>;
         };
     
            combo_rc {
             timeout-ms = <30>;
             key-positions = <15 26>;
             bindings = <&kp RCTRL>;
-            layers = <0>; 
+            layers = <3>; 
         };
 
         combo_rs {
