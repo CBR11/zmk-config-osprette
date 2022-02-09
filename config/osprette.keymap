@@ -149,6 +149,12 @@
             key-positions = <26 27>;
             bindings = <&kp RC(BSPC)>;
             layers = <0>; 
+         }; 
+           combo_bspcvt {
+            timeout-ms = <30>;
+            key-positions = <5 6>;
+            bindings = <&kp RC(BSPC)>;
+            layers = <0>; 
          };        
     };
 
