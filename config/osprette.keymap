@@ -30,6 +30,14 @@
             label = "homerow mods";
             #binding-cells = <2>;
             tapping_term_ms = <250>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+           hmc: homerow_modsc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "homerow modsc";
+            #binding-cells = <2>;
+            tapping_term_ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -38,11 +46,11 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_j {
+        combo_aa {
             timeout-ms = <30>;
-            key-positions = <5 15>;
-            bindings = <&qe>;
-            layers = <3>;
+            key-positions = <0 10>;
+            bindings = <&kp LBKT>;
+            layers = <0>;
         };
 
         combo_cit {
@@ -80,25 +88,25 @@
             bindings = <&kp SLASH>;
             layers = <0>; 
          };        
-          combo_la {
+          combo_w {
             timeout-ms = <30>;
             key-positions = <10 21>;
-            bindings = <&kp LALT>;
+            bindings = <&kp LGUI>;
             layers = <0>;
         };
 
-        combo_ls {
+        combo_la {
             timeout-ms = <30>;
             key-positions = <11 22>;
-            bindings = <&kp LSHIFT>;
+            bindings = <&kp LALT>;
             layers = <0>;
         };
 
         combo_lc {
             timeout-ms = <30>;
-            key-positions = <12 23>;
-            bindings = <&kp LCTRL>;
-            layers = <3>;
+            key-positions = <1 11>;
+            bindings = <&kp SQT>;
+            layers = <0>;
         };
     
            combo_rc {
@@ -111,14 +119,14 @@
         combo_rs {
             timeout-ms = <30>;
             key-positions = <16 27>;
-            bindings = <&kp LSHIFT>;
+            bindings = <&kp LALT>;
             layers = <0>;            
  
          };        
-           combo_ra {
+           combo_rw {
             timeout-ms = <30>;
             key-positions = <17 28>;
-            bindings = <&kp LALT>;
+            bindings = <&kp RGUI>;
             layers = <0>; 
          }; 
          
@@ -163,9 +171,9 @@
 
         MAIN_layer {
             bindings = <
-                      &kp U &kp O &kp C        &lt MED COMMA        &kp P    &kp K &kp L &kp M
+                      &kp U &kp O &kp B        &lt MED COMMA        &kp P    &kp K &kp L &kp M
           &kp Y &kp I &kp A &kp E &hm LSHIFT  S  &kp DOT            &kp F    &hm LSHIFT  D    &kp N        &kp T      &kp G &kp V
-                &kp LBKT &kp SQT &kp SEMI &hm LCTRL B  &qe      &lt SYM Z   &hm LCTRL H    &kp W        &kp J      &kp Q
+                &none &none &kp SEMI &hmc LCTRL C  &qe      &lt SYM Z   &hmc LCTRL H    &kp W        &kp J      &kp Q
                                   &kp SPC &mo NUM      &lt FN R    &lt NAVA R
             >;
         };
