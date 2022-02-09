@@ -50,7 +50,7 @@
             timeout-ms = <30>;
             key-positions = <10 11>;
             bindings = <&kp LBKT>;
-            layers = <0>;
+            layers = <3>;
         };
 
         combo_cit {
@@ -106,7 +106,7 @@
             timeout-ms = <30>;
             key-positions = <0 1>;
             bindings = <&kp SQT>;
-            layers = <0>;
+            layers = <3>;
         };
     
            combo_rc {
@@ -173,7 +173,7 @@
             bindings = <
                       &kp U &kp O &kp B        &lt MED COMMA        &kp P    &kp K &kp L &kp M
           &kp Y &kp I &kp A &kp E &hm LSHIFT  S  &kp DOT            &kp F    &hm LSHIFT  D    &kp N        &kp T      &kp G &kp V
-                &none &none &kp SEMI &hmc LCTRL C  &qe      &lt SYM Z   &hmc LCTRL H    &kp W        &kp J      &kp Q
+                &kp LBKT &kp SQT &kp SEMI &hmc LCTRL C  &qe      &lt SYM Z   &hmc LCTRL H    &kp W        &kp J      &kp Q
                                   &kp SPC &mo NUM      &lt FN R    &lt NAVA R
             >;
         };
