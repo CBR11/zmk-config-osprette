@@ -208,9 +208,9 @@
         
         NAVA_layer {
             bindings = <
-                         &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_MUTE      &sk RALT    &kp TAB     &kp ENTER &kp LG(Q)
-     &kp C_PREV &kp LS(SLASH) &kp COMMA     &kp DOT  &kp LS(N2)  &kp C_PP        &sk RA(GUI) &kp LEFT  &kp UP  &kp DOWN &kp RIGHT &none
-                &kp HOME &kp PG_DN    &kp PG_UP    &kp END    &kp C_STOP      &kp BSPC   &kp RC(BSPC) &kp LG(O)     &kp LG(N)  &sk RA(RCTRL)
+                         &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_MUTE      &none    &none     &none &none
+     &kp C_PREV &kp LS(SLASH) &kp COMMA     &kp DOT  &kp LS(N2)  &kp C_PP        &none &kp LEFT  &kp UP  &kp DOWN &kp RIGHT &none
+                &kp HOME &kp PG_DN    &kp PG_UP    &kp END    &kp C_STOP      &kp BSPC   &kp RC(BSPC) &none     &kp LG(N)  &sk RA(RCTRL)
                                                    &kp LSHFT      &none           &none     &none
             >;
         }; 
