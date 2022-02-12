@@ -85,7 +85,7 @@
             combo_minus{
             timeout-ms = <30>;
             key-positions = <2 12>;
-            bindings = <&kp SLASH>;
+            bindings = <&kp BSPC>;
             layers = <0>; 
          };        
           combo_w {
@@ -173,7 +173,7 @@
             bindings = <
                       &kp U &kp O &kp B        &lt MED COMMA        &kp P    &kp K &kp L &kp M
           &kp Y &kp I &kp A &kp E &hm LSHIFT  S  &kp DOT            &kp F    &hm LSHIFT  D    &kp N        &kp T      &kp G &kp V
-                &kp LBKT &kp SQT &kp SEMI &hmc LCTRL C  &qe      &lt SYM Z   &hmc LCTRL H    &kp W        &kp J      &kp Q
+                &kp LBKT &kp SQT &kp SEMI &hmc LCTRL C  &qe      &lt SYM Z   &hmc LCTRL H    &kp W        &kp J      &kp SLASH
                                   &kp SPC &mo NUM      &lt NAVA BSPC    &kp R
             >;
         };
