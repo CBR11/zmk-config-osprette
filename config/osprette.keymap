@@ -154,9 +154,9 @@
          };
            combo_bspcv {
             timeout-ms = <30>;
-            key-positions = <26 27>;
-            bindings = <&kp RC(BSPC)>;
-            layers = <3>; 
+            key-positions = <16 17>;
+            bindings = <&kp BSPC>;
+            layers = <0>; 
          }; 
            combo_bspcvt {
             timeout-ms = <30>;
@@ -173,7 +173,7 @@
             bindings = <
                       &kp U &kp O &kp B        &lt MED COMMA        &kp P    &kp K &kp L &kp M
           &kp Y &kp I &kp A &kp E &hm LSHIFT  S  &kp DOT            &kp F    &hm LSHIFT  D    &kp N        &kp T      &kp G &kp V
-                &kp LBKT &kp SQT &kp SEMI &hmc LCTRL C  &qe      &lt SYM Z   &hmc LCTRL H    &kp W        &kp J      &kp SLASH
+                &kp LBKT &kp SQT &kp SEMI &hmc LCTRL C  &qe      &lt SYM BSPC   &hmc LCTRL H    &kp W        &kp J      &kp SLASH
                                   &kp SPC &mo NUM      &lt NAVA BSPC    &kp R
             >;
         };
