@@ -173,9 +173,9 @@
         MAIN_layer {
             bindings = <
                       &kp U &kp O &kp LBKT        &lt MED COMMA        &kp B    &kp K &kp L &kp M
-          &kp Y &kp S &kp A &kp E &hm LSHIFT  I  &kp DOT            &kp F    &hm LSHIFT  D    &kp N        &kp T      &kp G &kp P
-                &kp C &kp SQT &kp SEMI &hmc LCTRL Y  &qe      &lt SYM BSPC   &hmc LCTRL H    &kp W        &kp J      &kp V
-                                  &kp SPC  &mo NUM     &lt BS R    &lt NAVA BSPC
+          &kp Y &kp S &kp A &kp E &hm LSHIFT  I  &kp DOT            &kp F    &hm LSHIFT  D    &kp N        &kp T      &kp G &kp SLASH
+                &kp C &kp SQT &kp SEMI &hmc LCTRL Y  &qe      &kp P &hmc LCTRL H    &kp W        &kp J      &kp V
+                                  &kp SPC  &mo NUM     &lt NAVA BSPC     &lt BS R
             >;
         };
 
